@@ -20,6 +20,7 @@ def delete_account():
     else:
         print("Account not found or incorrect PIN.")
 
+# User can edit different parts of the account including name, account number and pin
 def edit_account():
     print("What would you like to edit? Name, account number or pin? ")
     edit = input("N/A/P: ")
@@ -34,6 +35,7 @@ def edit_account():
         new_pin = int(input("Enter new pin: "))
         bank_database.edit_account_pin(number, new_pin)
 
+# User can add, take away, or check the amount of money they have in the database
 def manage_transaction():
     print("Do you want to withdraw(W), deposit(D) or check balance(B)? ")
     decision = input("W/D/B: ")
