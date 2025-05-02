@@ -10,6 +10,7 @@ def create_account():
     balance = int(input("Enter the amount of money you are initially depositing: "))
     bank_database.insert_account(name, number, pin, balance) 
     print("Account successfully added.")
+    print(f'Your account number is {number}.')
 
 # Deletes an account using bank_database functions
 def delete_account():
